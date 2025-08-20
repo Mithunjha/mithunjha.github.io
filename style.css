@@ -179,3 +179,45 @@ hr{border-color:#171a20}
   background: #171a20; 
   margin: 10px 0; 
 }
+
+
+/* grid: exactly 3 columns on desktop, responsive on smaller screens */
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* responsive wrap */
+@media (max-width: 980px) {
+  .repos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .repos-grid { grid-template-columns: 1fr; }
+}
+
+/* cards match your dark theme */
+.repo-card {
+  border: 1px solid #1a1f27;
+  background: #535860;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+.repo-title { margin: 0 0 6px; font-weight: 650; }
+.repo-title a { color: #8dd4ff; text-decoration: none; }
+.repo-title a:hover { text-decoration: underline; }
+
+.repo-desc { margin: 0 0 10px; color: #cbd5e1; }
+
+.repo-meta {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  font-size: 0.95rem; color: #9aa3af;
+}
+
+.lang-dot {
+  display: inline-block; width: 10px; height: 10px;
+  border-radius: 50%; margin-right: 6px; vertical-align: -1px;
+}
+
+.repo-empty { color: #9aa3af; }
