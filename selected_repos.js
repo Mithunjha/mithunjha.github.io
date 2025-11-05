@@ -4,7 +4,7 @@ const GH_USERNAME = "Mithunjha";
 const PICKED_REPOS = [
   "EarEEG_KnowledgeDistillation",
   "DEEP-squared",
-  "Cross-Modal-Transformer"   
+  "Cross-Modal-Transformer",   
   "PNP_MSI"
 ];
 
