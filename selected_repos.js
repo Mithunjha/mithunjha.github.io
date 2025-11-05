@@ -3,9 +3,8 @@ const GH_USERNAME = "Mithunjha";
 // List exactly the repos you want to show (names only)
 const PICKED_REPOS = [
   "EarEEG_KnowledgeDistillation",
-  "DEEP-squared",
-  "Cross-Modal-Transformer",   
-  "PNP_MSI"
+  "DEEP-squared", 
+  "PNP_MSI",
 ];
 
 async function fetchRepo(user, repo) {
