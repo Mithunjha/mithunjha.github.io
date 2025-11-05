@@ -4,7 +4,8 @@ const GH_USERNAME = "Mithunjha";
 const PICKED_REPOS = [
   "EarEEG_KnowledgeDistillation",
   "DEEP-squared",
-  "Cross-Modal-Transformer"   // change to your actual repo names
+  "Cross-Modal-Transformer"   
+  "PNP_MSI"
 ];
 
 async function fetchRepo(user, repo) {
